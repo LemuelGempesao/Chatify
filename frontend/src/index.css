@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+*{
+    user-select: none;
+}
+
+input::selection {
+    background: transparent; /* or match the input background */
+  }
+
+
+
+  
+
+body{
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.726), gray), url("./assets/body-bg.jpg");
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+@media screen and (max-width:510px) {
+    body{
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.726), gray), url("./assets/smS.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+}
